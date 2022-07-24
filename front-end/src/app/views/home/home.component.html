@@ -1,1 +1,31 @@
-<p>home works!</p>
+<div class="container">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef class="title">
+        <mat-icon aria-hidden="false" aria-label="Example person icon" fontIcon="person"></mat-icon>
+        Listagem de Clientes</th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="cnpj">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element"> {{element.cnpj}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="button">
+        <th mat-header-cell *matHeaderCellDef><button class='btn-new'>+ NOVO</button></th>
+        <td mat-cell *matCellDef="let element"><button>{{element.button}}</button></td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  </div>
+  
+  
