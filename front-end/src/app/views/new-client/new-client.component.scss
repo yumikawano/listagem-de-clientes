@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 150px;
+  };
+
+.btn-save {
+    display: flex;
+    align-items: center;
+    background-color: #3AB72F;
+    color: #fff;
+    border:#3AB72F;
+    width: 91px;
+    height: 34px;
+    border-radius: 5px; 
+    font-size: 20px;
+};
+
+.new {
+    font-size: 27px;
+  };
+
+.icon {
+    padding-left: 150px;
+    padding-right: 10px;
+}
