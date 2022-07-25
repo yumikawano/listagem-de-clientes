@@ -4,7 +4,7 @@ table {
 
 .container {
   padding: 0px 150px;
-}
+};
 
 button {
   background-color: #E18F53;
@@ -13,16 +13,26 @@ button {
   width: 91px;
   height: 34px;
   border-radius: 5px;
-}
+};
 
 .btn-new {
   background-color: #4486EA;
   color: #fff;
   width: 91px;
   height: 34px;
-}
+};
 
 .title {
   font-size: 27px;
   color: #000;
+};
+
+@media (min-width: 360px)
+{
+  .container{
+    padding: 0px;
+  };
+  .title {
+    font-size: 15px;
+  };
 }
